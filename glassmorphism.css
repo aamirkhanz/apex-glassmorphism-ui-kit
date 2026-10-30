@@ -1,5 +1,5 @@
 /*!
- * Glassmorphism UI Kit for Oracle APEX Universal Theme 1.0.0 (built and tested with APEX 26.2, theme style Iris)
+ * Glassmorphism UI Kit for Oracle APEX Universal Theme 1.0.1 (built and tested with APEX 26.2, theme style Iris)
  * TechRevX, MIT License - https://github.com/aamirkhanz/apex-glassmorphism-ui-kit
  *
  * Frosted glass: surfaces are translucent panels that blur and brighten what lies behind them, with a thin light
@@ -942,7 +942,7 @@ body::before {
 .t-Form-itemWrapper > :is(input.apex-item-text, input.text_field, input.password, input.number_field, input.datepicker, input.popup_lov,
   input.apex-item-popup-lov, select.apex-item-select, select.selectlist, textarea.apex-item-textarea, textarea.textarea),
 .t-Form-itemWrapper > :is(input, select, textarea):focus,
-.apex-item-comboselect, .a-Combobox, .apex-item-select-many, .shuttle_left, .shuttle_right,
+.apex-item-comboselect, .a-Combobox, .apex-item-select-many, .shuttle_left, .shuttle_right, .apex-item-color-picker, .a-ColorPicker-input,
 .a-IRR-search-field, .a-Toolbar-input, .a-FS-search input, .a-SmartFilter-input,
 .ui-input-search, .ui-filterable input, input[data-type="search"],
 .ck.ck-editor__editable.ck-editor__editable_inline, .ck.ck-editor__main > .ck-editor__editable {
@@ -1122,7 +1122,7 @@ select[multiple], select[size]:not([size="1"]), textarea, .t-Region-body, .a-GV-
 .apex-item-comboselect {
   border-color: transparent !important;
   border-radius: var(--gm-radius-sm) !important;
-  background-color: var(--gm-bg) !important;
+  background-color: var(--gm-well) !important;
   box-shadow: var(--gm-inset) !important;
 }
 .apex-item-comboselect:focus-within { box-shadow: var(--gm-inset), var(--gm-focus) !important; }
