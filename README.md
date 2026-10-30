@@ -9,7 +9,7 @@ Frosted glass for Oracle APEX Universal Theme: translucent panels with a thin li
 | | |
 |---|---|
 | **Files** | `glassmorphism.css` (the look), `glassmorphism.js` (optional light/dark switch) |
-| **Version** | 1.0.1 |
+| **Version** | 1.0.2 |
 | **Built for** | Oracle APEX 26.2, Universal Theme with the Iris theme style (tested); other styles are not tested yet |
 | **Browsers** | Current Chrome, Edge, Safari and Firefox (the blur uses `backdrop-filter`; without it the panels stay, unblurred) |
 | **License** | MIT |

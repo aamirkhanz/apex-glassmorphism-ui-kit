@@ -1,5 +1,5 @@
 /*!
- * Glassmorphism UI Kit for Oracle APEX Universal Theme 1.0.1 (built and tested with APEX 26.2, theme style Iris)
+ * Glassmorphism UI Kit for Oracle APEX Universal Theme 1.0.2 (built and tested with APEX 26.2, theme style Iris)
  * TechRevX, MIT License - https://github.com/aamirkhanz/apex-glassmorphism-ui-kit
  *
  * Frosted glass: surfaces are translucent panels that blur and brighten what lies behind them, with a thin light
@@ -1273,6 +1273,13 @@ a.t-MediaList-itemWrap:active { box-shadow: var(--gm-inset-sm); }
 .t-BadgeList.u-colors .t-BadgeList-wrap { box-shadow: var(--gm-raised-sm); }
 /* on colored tiles the label takes the tile's contrast color, like the value */
 .t-BadgeList.u-colors .t-BadgeList-label { color: inherit !important; opacity: .88; }
+/* colored lists with Circular values: the count sits in a clear circle inside the tile (the tile keeps room for it) */
+.t-BadgeList--circular.u-colors .t-BadgeList-wrap { padding-block: 14px 10px; }
+.t-BadgeList--circular.u-colors .t-BadgeList-value {
+  margin-block-end: 6px;
+  background: rgba(255, 255, 255, .2) !important;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .5), inset 0 2px 5px rgba(0, 0, 0, .18) !important;
+}
 .t-BadgeList:not(.u-colors) a.t-BadgeList-wrap:hover .t-BadgeList-value { box-shadow: var(--gm-inset-sm) !important; }
 
 /* cards (list and report templates) */
