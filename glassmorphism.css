@@ -42,6 +42,7 @@ html.gm-light {
   --gm-on-text: #fff;                       /* text on a text-colored surface (tooltips) */
   --gm-line: rgba(30, 36, 80, .1);
   --gm-hover: rgba(255, 255, 255, .4);
+  --gm-track: rgba(30, 36, 80, .07);         /* segmented controls and tab bars: a light tint under the glass */
 
   --gm-accent: #5468ee;
   --gm-accent-2: #8058f2;                   /* end of the accent gradient */
@@ -103,6 +104,7 @@ html.gm-dark {
   --gm-on-text: #12152a;
   --gm-line: rgba(255, 255, 255, .1);
   --gm-hover: rgba(255, 255, 255, .07);
+  --gm-track: rgba(0, 0, 0, .28);
 
   --gm-accent: #7c8cff;
   --gm-accent-2: #a77dff;
@@ -741,7 +743,7 @@ body::before {
   padding: 7px;
   border: 0;
   border-radius: var(--gm-radius);
-  background: var(--gm-bg);
+  background: var(--gm-track);
   box-shadow: var(--gm-inset);
 }
 .t-Tabs-item { border: 0; }
@@ -779,7 +781,7 @@ body::before {
   padding: 6px;
   border: 0;
   border-radius: var(--gm-radius);
-  background: var(--gm-bg);
+  background: var(--gm-track);
   box-shadow: var(--gm-inset);
 }
 .a-RDS-item { border: 0; }
@@ -1021,7 +1023,7 @@ input:focus-visible + .u-checkbox::before, input:focus-visible + .u-radio::befor
   gap: 4px;
   padding: 4px;
   border-radius: calc(var(--gm-radius-sm) + 4px);
-  background: var(--gm-well);
+  background: var(--gm-track);
   box-shadow: var(--gm-inset-sm);
 }
 .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc .apex-item-option { flex: 1 1 0; margin: 0; }
@@ -1046,12 +1048,12 @@ input:focus-visible + .u-checkbox::before, input:focus-visible + .u-radio::befor
   --a-button-hover-border-color: transparent;
 }
 .ui-button--hot, .a-CardView-button--hot { background: var(--gm-accent-fill) !important; color: var(--gm-on-accent) !important; box-shadow: var(--gm-accent-shadow) !important; }
-/* the chosen pill of a radio group shown as pill buttons: pressed in, accent text */
+/* the chosen pill of a radio group shown as pill buttons: filled with the accent, like a hot button */
 .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc .apex-item-option input:checked + label,
 .apex-button-group input:checked + label {
-  background: var(--gm-surface-2) !important;
-  color: var(--gm-accent-text) !important;
-  box-shadow: var(--gm-raised-xs) !important;
+  background: var(--gm-accent-fill) !important;
+  color: var(--gm-on-accent) !important;
+  box-shadow: var(--gm-accent-shadow) !important;
   font-weight: 700;
 }
 
