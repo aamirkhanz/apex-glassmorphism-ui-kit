@@ -1,5 +1,5 @@
 /*
- * Glassmorphism UI Kit for Oracle APEX Universal Theme 1.0.2: light and dark mode
+ * Glassmorphism UI Kit for Oracle APEX Universal Theme 1.0.3: light and dark mode
  * TechRevX, MIT License - https://github.com/aamirkhanz/apex-glassmorphism-ui-kit
  *
  * The look is in glassmorphism.css; this file only switches between light and dark. Without it the kit stays light,
